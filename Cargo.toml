@@ -1,0 +1,12 @@
+[package]
+name = "helenos-ui"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+libc = {git = "https://github.com/mvolfik/rust-libc.git", branch = "helenos-v0.2", version = "0.2"}
+
+[build-dependencies]
+bindgen = "0.71.1"
+cc = {git = "https://github.com/mvolfik/cc-rs.git", branch = "helenos", version = "1.2"}
+serde_json = "1.0.140"
