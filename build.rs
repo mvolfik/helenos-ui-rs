@@ -71,7 +71,7 @@ fn get_native_include_flags() -> Result<Vec<String>, String> {
 fn main() {
     let target = env::var("TARGET").unwrap();
     if !target.contains("helenos") {
-        println!("cargo::error=Not a HelenOS target ({target})");
+        println!("cargo::warning=Not a HelenOS target ({target}), this package will be empty");
         return;
     }
 
