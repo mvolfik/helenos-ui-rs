@@ -108,7 +108,8 @@ fn main() {
         .allowlist_function(
             "\
                 ui_(\
-                    create|\
+                    create|destroy|\
+                    control_.*|\
                     window_.*|\
                     wnd_params_init|\
                     wdecor_.*\

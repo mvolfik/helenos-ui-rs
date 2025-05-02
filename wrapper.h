@@ -3,11 +3,14 @@
 
 #define _HELENOS_SOURCE
 
+#include <ui/control.h>
 #include <ui/ui.h>
 #include <ui/window.h>
 #include <ui/wdecor.h>
 #include <types/ui/ui.h>
 #include <io/pixelmap.h>
+#include <gfx/bitmap.h>
+#include <gfx/render.h>
 #include <fibril.h>
 
 // TODO: this is nice and works, but there's no inlining/optimization across
